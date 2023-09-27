@@ -40,8 +40,17 @@ export const player = createSlice({
       // Retour sur une configuration intiale
       return initState;
     },
+    // Appelle le prochain joueur de la partie
+    nextPlayer: (state, action) => {
+      // Déstructuration du tableau avec "...state" (rien ne change à part "position" )
+      const newState = {...state, position: action.payload};
+      console.log('nextPlayer', action.payload);
+      // Retour sur une configuration intiale
+      return newState;
+    },
   },
 });
 
-export const {addPlayer, deletePlayer, resetPlayer} = player.actions;
+export const {addPlayer, deletePlayer, resetPlayer, nextPlayer} =
+  player.actions;
 export default player.reducer;

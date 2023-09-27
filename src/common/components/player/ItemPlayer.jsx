@@ -13,7 +13,20 @@ const ItemPlayer = ({player}) => {
   };
 
   return (
-    <View>
+    <View
+    // style={{
+    //   position: 'absolute',
+    //   bottom: 10,
+    //   margin: 10,
+    //   marginHorizontal: 25,
+    //   borderRadius: 20,
+    //   padding: 10,
+    //   //       // width: '100%',
+    //   backgroundColor: '#EDEDED',
+    //   flexDirection: 'row',
+    //   alignItems: 'center',
+    // }}
+    >
       <Text>{player.name}</Text>
       <Button onPress={supprimer}>Suppr.</Button>
     </View>

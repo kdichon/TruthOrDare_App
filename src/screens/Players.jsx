@@ -6,6 +6,7 @@ import ItemPlayer from '../common/components/player/ItemPlayer';
 import EmptyPlayer from '../common/components/player/EmptyPlayer';
 import AddPlayer from '../common/components/player/AddPlayer';
 import ResetPlayer from '../common/components/player/ResetPlayer';
+import StartGame from '../common/components/button/StartGame';
 
 const Players = () => {
   //Récupération de la liste des joueurs
@@ -24,6 +25,7 @@ const Players = () => {
         // Information: Ajout de joueur
         ListHeaderComponent={AddPlayer}
       />
+      <StartGame />
       <ResetPlayer />
     </View>
   );

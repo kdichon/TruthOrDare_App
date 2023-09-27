@@ -16,11 +16,11 @@ const Route = () => {
       {/* Désactivation de l'entête de la Stack */}
       <Stack.Navigator screenOptions={{headerShown: false}}>
         {/* Les Vues */}
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Players" component={Players} />
-        <Stack.Screen name="Category" component={Category} />
-        <Stack.Screen name="TruthOrDare" component={TruthOrDare} />
-        <Stack.Screen name="ShowTruthOrDare" component={ShowTruthOrDare} />
+        <Stack.Screen name="home" component={Home} />
+        <Stack.Screen name="players" component={Players} />
+        <Stack.Screen name="category" component={Category} />
+        <Stack.Screen name="truthordare" component={TruthOrDare} />
+        <Stack.Screen name="showtruthordare" component={ShowTruthOrDare} />
       </Stack.Navigator>
     </NavigationContainer>
   );

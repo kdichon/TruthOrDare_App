@@ -9,7 +9,6 @@ const Search = () => {
   const onChangeSearch = query => setSearchQuery(query);
   return (
     <View style={stylesTuto.contentSearch}>
-      {/* <Text>Search</Text> */}
       <Searchbar
         placeholder="Search"
         onChangeText={onChangeSearch}

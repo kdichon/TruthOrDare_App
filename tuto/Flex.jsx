@@ -14,7 +14,6 @@ const Flex = ({nom, prenom}) => {
         <Text style={stylesTuto.textBox2}>
           {prenom}
           {nom}
-          {''}
         </Text>
       </View>
       <View style={stylesTuto.box3}>

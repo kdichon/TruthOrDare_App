@@ -20,7 +20,7 @@ const Category = ({navigation}) => {
     const dataCategories = await loadData('CategoryDOT');
     // Application des Datas à Catégories
     setCategories(dataCategories);
-    console.log('CatDatas', setCategories);
+    console.log('CatDatas', dataCategories);
     // Arrêt du "Loading"
     dispatch(updateLoading());
   };

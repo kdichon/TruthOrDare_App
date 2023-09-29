@@ -9,7 +9,7 @@ const StartGame = () => {
 
   // Récupération de la liste de joueurs
   const {players} = useSelector(state => state.player);
-  console.log('player', players.length);
+  console.log('Nb_Players', players.length);
 
   const start = () => {
     navigation.navigate('category');

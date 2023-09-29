@@ -11,7 +11,7 @@ import StartGame from '../common/components/button/StartGame';
 const Players = () => {
   //Récupération de la liste des joueurs
   const {players} = useSelector(state => state.player);
-  console.log('players', players);
+  // console.log('Players', players);
 
   return (
     <View style={styles.container}>

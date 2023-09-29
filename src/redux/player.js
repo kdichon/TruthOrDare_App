@@ -44,7 +44,7 @@ export const player = createSlice({
     nextPlayer: (state, action) => {
       // Déstructuration du tableau avec "...state" (rien ne change à part "position" )
       const newState = {...state, position: action.payload};
-      console.log('nextPlayer', action.payload);
+      console.log('Store_nextPlayer', action.payload);
       // Retour sur une configuration intiale
       return newState;
     },

@@ -7,7 +7,7 @@ export default styles = StyleSheet.create({
   bigTitle: {
     fontSize: 18,
     fontWeight: '700',
-    color: '#F9100',
+    color: '#FF6D00',
   },
   categoryItemContainer: {
     margin: 10,
@@ -16,7 +16,7 @@ export default styles = StyleSheet.create({
     width: 100,
     alignItems: 'center',
     justifyContent: 'center',
-    borderColor: 'FF6D00',
+    borderColor: '#FF6D00',
     borderWidth: 1,
     borderRadius: 15,
   },
@@ -24,5 +24,10 @@ export default styles = StyleSheet.create({
     fontSize: 13,
     color: '#FF6D00',
     fontWeight: '600',
+  },
+  titleCategoryStore: {
+    color: '#FF6D00',
+    fontSize: 18,
+    fontWeight: '800',
   },
 });

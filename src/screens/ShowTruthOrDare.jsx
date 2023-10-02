@@ -8,11 +8,11 @@ import {getRandomIndex} from '../common/js/function';
 const ShowTruthOrDare = ({route}) => {
   console.log('Show_idTOD', route.params.id);
   const [showTOD, setShowTOD] = useState();
-  const {id} = route.params;
+  const {id, type} = route.params;
   const {players, position} = useSelector(state => state.player);
   const loadTOD = async () => {
     // console.log('load', id);
-    const dataTruthOrDare = await loadDataTOD(id);
+    const dataTruthOrDare = await loadDataTOD(id, type);
     console.log('dataTruthOrDare', dataTruthOrDare);
     const index = getRandomIndex(0, dataTruthOrDare.length);
     console.log(index);

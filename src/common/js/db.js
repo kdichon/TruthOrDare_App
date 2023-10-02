@@ -22,11 +22,12 @@ export const loadData = async collectionName => {
  * params ( id<string> : id category)
  * */
 
-export const loadDataTOD = async id => {
+export const loadDataTOD = async (id, type) => {
   console.log('loadDataTOD', id);
   const snapShot = await firestore()
     .collection('TruthOrDare')
     .where('category', '==', id)
+    .where('type', '==', type)
     .get();
   //Vérification des données
   if (!snapShot.empty) {

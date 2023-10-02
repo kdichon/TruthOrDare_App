@@ -9,9 +9,9 @@ const Tuto = () => {
   return (
     <Provider store={store}>
       <View>
-        <Text>Tuto</Text>
+        {/* <Text>Tuto</Text> */}
         <CategoryData />
-        <CategoryStore />
+        {/* <CategoryStore /> */}
       </View>
     </Provider>
   );

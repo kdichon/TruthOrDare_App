@@ -23,4 +23,17 @@ export const stylesProduct = StyleSheet.create({
     color: '#FFEACB',
     fontWeight: '900',
   },
+  contentButtonFilter: {
+    // backgroundColor: 'red',
+
+    margin: 5,
+    backgroundColor: '#FFEACB',
+    height: 45,
+    width: 90,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderColor: '#FF6D00',
+    borderWidth: 1,
+    borderRadius: 15,
+  },
 });

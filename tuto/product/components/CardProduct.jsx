@@ -15,14 +15,14 @@ const CardProduct = ({product}) => {
         left={LeftContent}
       /> */}
       <Card.Content>
-        <Text variant="titleLarge" style={stylesProduct.cardTitle}>
+        <Text variant="titleLarge" style={stylesProduct?.cardTitle}>
           {product.title}
         </Text>
-        <Text variant="bodyMedium" style={stylesProduct.cardPrice}>
+        <Text variant="bodyMedium" style={stylesProduct?.cardPrice}>
           {product.price} $
         </Text>
       </Card.Content>
-      <Card.Cover source={{uri: product.thumbnail}} />
+      <Card.Cover source={{uri: product?.thumbnail}} />
       {/* <Card.Actions>
         <Button>Cancel</Button>
         <Button>Ok</Button>

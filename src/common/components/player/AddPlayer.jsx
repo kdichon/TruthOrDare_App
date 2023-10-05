@@ -12,7 +12,11 @@ const AddPlayer = () => {
   const send = value => {
     console.log('send', value);
     // Formatage de la donnée à envoyer dans le store
-    const newPlayer = {id: Date.now(), name: value};
+    const newPlayer = {
+      id: Date.now(),
+      name: value,
+      tod: [],
+    };
     // Envoi dans le store via le Reducer addPlayer
     dispatch(addPlayer(newPlayer));
     //Vide le champ du TextInput nom du joueur

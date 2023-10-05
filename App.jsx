@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 import Route from './src/screens/Route';
 import {Provider} from 'react-redux';
 import {store} from './src/redux/store';
-import {migrate} from './src/common/DataStore/migrate';
+// import {migrate} from './src/common/DataStore/migrate';
 
 const App = () => {
   useEffect(() => {

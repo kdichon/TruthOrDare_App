@@ -22,10 +22,11 @@ export const loadData = async collectionName => {
  * params ( id<string> : id category)
  * */
 
-export const loadDataTOD = async (id, type) => {
+export const loadDataTOD = async (id, type, tod) => {
   console.log('loadDataTOD', id);
   const snapShot = await firestore()
     .collection('TruthOrDare')
+    .where(firestore.FieldPath.documentId(), 'not-in', ['tod'])
     .where('category', '==', id)
     .where('type', '==', type)
     .get();
@@ -35,7 +36,7 @@ export const loadDataTOD = async (id, type) => {
       return {id: doc.id, ...doc.data()};
     });
     //Retourne les Datas du tableau
-    return datas;
+    return datas.filter(item => item.category == id);
   } else {
     //Retourne un tableau vide
     return [];

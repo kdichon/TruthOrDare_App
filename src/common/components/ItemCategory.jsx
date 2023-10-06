@@ -18,7 +18,7 @@ const ItemCategory = ({category}) => {
   return (
     <View style={[styles.slide, {backgroundColor: category.color}]}>
       <Text style={styles.slideTitle}>{category.name}</Text>
-      <Image style={styles.slideImage} source={category?.image} />
+      {/* <Image style={styles.slideImage} source={category?.image} /> */}
       <Text style={styles.slideText}>{category.description}</Text>
       <Button
         mode="contained"

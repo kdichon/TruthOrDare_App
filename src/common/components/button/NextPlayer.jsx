@@ -12,11 +12,12 @@ const NextPlayer = ({id}) => {
   const navigation = useNavigation();
 
   const {players, position} = useSelector(state => state.player);
+  console.log('Player length & Position:', players.length, position);
   // Fonction qui permet de passer au joueur suivant
   const suivant = () => {
-    players.length < position
-      ? dispatch(nextPlayer(0))
-      : dispatch(nextPlayer(position + 1));
+    players.length > position
+      ? dispatch(nextPlayer(position + 1))
+      : dispatch(nextPlayer(0));
 
     navigation.navigate('truthordare', {id: id});
   };

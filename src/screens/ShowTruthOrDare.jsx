@@ -13,8 +13,12 @@ const ShowTruthOrDare = ({route}) => {
   const {id, type} = route.params;
   const {players, position} = useSelector(state => state.player);
   const loadTOD = async () => {
-    // console.log('load', id);
-    const dataTruthOrDare = await loadDataTOD(id, type);
+    console.log('PlayerTOD', players[position].tod);
+    // Déstructuration de TOD
+    const {tod} = players[position];
+    // Version simplifiée
+    // const dataTruthOrDare = await loadDataTOD(id, type, players[position].tod);
+    const dataTruthOrDare = await loadDataTOD(id, type, tod);
     // console.log('dataTruthOrDare', dataTruthOrDare);
     const index = getRandomIndex(0, dataTruthOrDare.length);
     // console.log('index', id, index);

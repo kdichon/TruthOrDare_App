@@ -14,8 +14,9 @@ const NextPlayer = ({id}) => {
   const {players, position} = useSelector(state => state.player);
 
   const suivant = () => {
-    players.length > position
-      ? dispatch(nextPlayer(0))
+    players.length < position
+      ? // Si position >
+        dispatch(nextPlayer(0))
       : dispatch(nextPlayer(position + 1));
     navigation.navigate('truthordare', {id: id});
   };

@@ -1,4 +1,4 @@
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import React from 'react';
 import CategoryData from './category/CategoryData';
 import CategoryStore from './category/CategoryStore';
@@ -13,13 +13,15 @@ const Tuto = () => {
   return (
     <Provider store={store}>
       <View>
-        {/* <Text>Tuto</Text> */}
-        <CategoryData />
-        {/* <CategoryStore /> */}
-        {/* <ProductData /> */}
-        {/* <ProductStore /> */}
-        {/* <ProductFirestore /> */}
-        <ProductApi />
+        <ScrollView>
+          {/* <Text>Tuto</Text> */}
+          {/* <CategoryData /> */}
+          {/* <CategoryStore /> */}
+          {/* <ProductData /> */}
+          {/* <ProductStore /> */}
+          {/* <ProductFirestore /> */}
+          <ProductApi />
+        </ScrollView>
       </View>
     </Provider>
   );
